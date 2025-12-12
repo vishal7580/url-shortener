@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@layer components {
+  .navlink {
+    @apply text-slate-700 font-medium hover:text-slate-900 transition;
+  }
+
+  .mobile-link {
+    @apply text-slate-700 font-semibold text-base hover:text-slate-900;
+  }
+
+  .btn-primary {
+    @apply bg-slate-800 hover:bg-slate-900 text-white px-5 py-2 rounded-md font-semibold transition-all shadow-md;
+  }
+}
+
+/* React Toastify toasts smaller on mobile */
+@media (max-width: 480px) {
+
+  /* Reduce toast box width */
+  .Toastify__toast {
+    width: 220px !important;       /* Smaller toast */
+    min-height: 40px !important;
+    padding: 8px 10px !important;
+    border-radius: 10px !important;
+    font-size: 13px !important;
+    margin: 6px auto !important;   /* Center nicely */
+  }
+
+  /* Reduce the toast body spacing */
+  .Toastify__toast-body {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Smaller close button */
+  .Toastify__close-button {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* Reduce icon size if present */
+  .Toastify__toast-icon {
+    width: 16px !important;
+  }
+}
