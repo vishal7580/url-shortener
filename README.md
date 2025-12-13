@@ -180,8 +180,6 @@ PORT=3000
 
 ---
 
-## 📝 License
-
-MIT License.
+## 🔗 Live Demo: [URL Shortener](https://url-shortener-vishal.vercel.app)
 
 ---
